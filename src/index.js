@@ -1,4 +1,5 @@
-import gameTable from "./js/app.js";
+import GameTable from './js/app.js';
 import './css/style.css';
 
-let table1 = new gameTable(3, 5);
+/* eslint-disable no-new */
+new GameTable(3, 5);
