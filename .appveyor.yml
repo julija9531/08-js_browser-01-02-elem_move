@@ -18,10 +18,3 @@ build_script:
 
 test_script:
   - npm run lint && npm test  # скрипт тестирования
-
-deploy_script:  # скрипт развёртывания
-  - git config --global credential.helper store
-  - git config --global user.name julija1995
-  - git config --global user.email julija1995@list.ru
-  - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
-  - npx push-dir --dir=dist --branch=gh-pages --force --verbose
